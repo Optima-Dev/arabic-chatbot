@@ -1,12 +1,8 @@
 from flask import Flask, render_template, request, jsonify
 from datetime import datetime
 import pytz
-import locale
 import requests
-import json
-import os
 from dotenv import load_dotenv
-import random
 
 # Load environment variables
 load_dotenv()
@@ -305,3 +301,7 @@ def send_message():
 
 if __name__ == '__main__':
     app.run(debug=True) 
+    
+    #source venv/bin/activate
+    #pip install -r requirements.txt
+    #python app.py
